@@ -50,14 +50,13 @@ public class UserController {
 			foundUser.setPassword(newUser.getPassword());
 			userRepository.save(foundUser);
 			return foundUser;
-		} 
-		else {
+		} else {
 			return null;
 		}
-		
-	    @DeleteMapping("/{userId}")
-	    public void deleteOneUser(@PathVariable Long userId){
-	        userRepository.deleteById(userId);
-	    }
+	}
+
+	@DeleteMapping("/{userId}")
+	public void deleteOneUser(@PathVariable Long userId) {
+		userRepository.deleteById(userId);
 	}
 }

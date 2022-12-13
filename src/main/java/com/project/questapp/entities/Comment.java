@@ -6,15 +6,11 @@ import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Table;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "comments")
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class Comment {
 
 	@Id
