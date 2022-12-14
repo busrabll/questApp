@@ -3,9 +3,12 @@ package com.project.questapp.services;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Service;
+
 import com.project.questapp.entities.User;
 import com.project.questapp.repositories.UserRepository;
 
+@Service
 public class UserService {
 
 	private UserRepository userRepository;
